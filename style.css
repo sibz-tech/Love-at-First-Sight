@@ -1,0 +1,133 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Georgia', serif;
+  color: #fff;
+  background-color: #2c1a26; /* deep mauve background fallback */
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* optional: fix background when scrolling */
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-image 0.8s ease-in-out;
+  padding: 20px;
+
+  /* Removed flex centering to allow natural scroll */
+  overflow-y: auto;
+}
+
+/* App container */
+.app-container {
+  background: rgba(44, 26, 38, 0.85); /* translucent deep plum overlay */
+  padding: 30px 40px;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 192, 203, 0.4); /* subtle pink glow */
+  text-align: center;
+
+  /* Center horizontally and add breathing room vertically */
+  margin: 40px auto;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: 'Times New Roman', serif;
+  letter-spacing: 0.08em;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  color: #ffd1dc; /* soft blush pink */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #ffc0cb; /* lighter pink */
+  font-style: italic;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.15rem;
+  margin-bottom: 20px;
+  white-space: pre-line; /* preserve line breaks */
+  font-weight: 400;
+  color: #ffe4e1; /* misty rose */
+}
+
+/* Blockquote */
+blockquote {
+  font-style: italic;
+  margin: 30px auto;
+  color: #f8bbd0; /* pink tint */
+  max-width: 70%;
+  border-left: 3px solid #ff69b4;
+  padding-left: 15px;
+
+  opacity: 0.7;  /* consistent lowered opacity */
+  transition: none !important; /* prevent flickering on refresh */
+}
+
+/* Buttons */
+button {
+  background: #ff69b4; /* hot pink */
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  margin: 10px 8px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5);
+  user-select: none;
+}
+
+button:hover,
+button:focus {
+  background-color: #ff85c1;
+  outline: none;
+  box-shadow: 0 6px 14px rgba(255, 105, 180, 0.8);
+}
+
+/* Special styling for inside folder page */
+body.inside-theme .app-container {
+  background: #4b2e3e; /* deep warm plum color */
+  border: 2px solid #ffb6c1;
+  box-shadow: 0 0 25px rgba(255, 182, 193, 0.8);
+}
+
+/* Responsive typography */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+  
+  .app-container {
+    padding: 20px 25px;
+  }
+  
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
