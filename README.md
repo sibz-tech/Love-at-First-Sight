@@ -1,6 +1,6 @@
 # 💌 Love @ First Sight
 
-[**View Live Project Here**](https://sibz-tech.github.io/love-at-first-sight/)
+[**View Live Project Here**](https://sibz-tech.github.io/Love-at-First-Sight/)
 
 **Love @ First Sight** is an interactive, folder-style web experience designed as a gift of words, comfort, and presence. Each section (or “pocket”) holds a message, a quote, and a themed reflection. The app moves like a book but flows digitally, creating a smooth, private, and immersive journey.
 
@@ -61,7 +61,7 @@ love @ first sight/
 ## 🌐 Live Demo
 
 Explore the project here:
-👉 [Love @ First Sight on GitHub Pages](https://sibz-tech.github.io/love-at-first-sight/)
+👉 [Love @ First Sight on GitHub Pages](https://sibz-tech.github.io/Love-at-First-Sight/)
 
 ---
 
